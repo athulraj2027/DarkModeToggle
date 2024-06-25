@@ -1,0 +1,30 @@
+.main{
+    width: 40vw;
+    background-color: #4793AF;
+    min-height:20vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html{
+    display: flex;
+    justify-content: center;
+    background-color: #D9EDBF;
+    align-items: center;
+    height: 100%;
+}
+
+#dark-toggle{
+    background-color: #D9EDBF;
+    height: 30px;
+    border-radius: 30px;
+    border: 0;
+    width: 120px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}

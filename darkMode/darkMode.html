@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="darkMode.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Hi Bro</h1><br>
+        <button id="dark-toggle" onclick="modeChange()">Dark Mode</button>
+
+    </div>
+    <script>
+        function modeChange(){
+            const background = document.querySelector(`html`); 
+            const container = document.querySelector(`.main`);
+            const computedStyle = window.getComputedStyle(background);
+            const CurrentBackGroundColor = computedStyle.backgroundColor;
+            const ModeBtn = document.querySelector("#dark-toggle");
+           
+           
+
+
+
+            if(CurrentBackGroundColor ==="rgb(217, 237, 191)"){
+                background.style.backgroundColor = "#1D2B53";
+                container.style.backgroundColor = "#141E46";
+                container.style.color = "white";
+                ModeBtn.style.backgroundColor = "#1D2B53";
+                ModeBtn.style.color = "white";
+            }else{
+                background.style.backgroundColor ="#D9EDBF";
+                container.style.backgroundColor = "#4793AF";
+                container.style.color = "black";
+                ModeBtn.style.backgroundColor = "#D9EDBF";
+                ModeBtn.style.color = "black";
+
+            }
+        }
+    </script>
+</body>
+</html>
